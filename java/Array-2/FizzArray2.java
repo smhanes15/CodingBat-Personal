@@ -1,0 +1,29 @@
+/*
+ *  Array-2 --> fizzArray2
+ *
+ *    Given a number n, create and return a new string array of length n, containing the strings "0", "1"
+ *    "2" .. through n-1. N may be 0, in which case just return a length 0 array. Note:
+ *    String.valueOf(xxx) will make the String form of most types. The syntax to make a new string array
+ *    is: new String[desired_length] (See also: FizzBuzz Code)
+ *
+ *  Tests:
+ *    fizzArray2(4) ? ["0", "1", "2", "3"]
+ *    fizzArray2(10) ? ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+ *    fizzArray2(2) ? ["0", "1"]
+ *    fizzArray2(1) ? ["0"]
+ *    fizzArray2(0) ? []
+ *    fizzArray2(7) ? ["0", "1", "2", "3", "4", "5", "6"]
+ *    fizzArray2(9) ? ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+ *    fizzArray2(11) ? ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+ *    other tests
+ */
+public class FizzArray2 {
+  public String[] fizzArray2(int n) {
+    String[] arr = new String[n];
+    for (int i = 0; i < n; i++) {
+      arr[i] = String.valueOf(i);
+    }
+    return arr;
+  }
+} // Delete the line below to have this file overwritten with current CodingBat content. //
+  // %FINISHED% //
